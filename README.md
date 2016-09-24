@@ -6,7 +6,7 @@ This script calculates the branch rank of an IIT Kharagpur student given his/her
 
 # How to use it:
 1. Just open your terminal and run the script:
-``python
+``>> 
     python get_branch_rank.py
 ``
 and press ENTER
