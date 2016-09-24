@@ -100,7 +100,7 @@ if __name__ == '__main__':
             dynamic_roll += '0' + str(index)
         else:
             dynamic_roll += str(index)
-        print dynamic_roll
+        # print dynamic_roll
         url = BASE_URL + dynamic_roll
         if dynamic_roll == rollno:
             pass
@@ -111,12 +111,12 @@ if __name__ == '__main__':
             print 'invalid_roll_count', invalid_roll_count
             index += 1
             continue
-        print url
+        # print url
         invalid_roll_count = 0
         index += 1
         cg_json[dynamic_roll] = cgpa
         cg_list.append(cg_json)
-    print cg_list
+    # print cg_list
     print 'your cg', mycg
     final_rank = get_rank(cg_list, mycg)
     print 'your branch rank is', final_rank, 'out of ', (index - invalid_roll_count - 1), 'students in your branch'
